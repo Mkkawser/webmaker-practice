@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="p-5 sm:p-10 flex justify-between items-center">
+      <div className="p-5 sm:p-10 flex justify-between items-center md:px-[80px]">
         {/* Site Logo */}
         <div className="flex items-center gap-[5px] w-[25px]">
           <Image
@@ -54,7 +54,7 @@ const Navbar = () => {
       </div>
 
       {/* 
-          sidebar panel      
+          Sidebar Panel      
          */}
       <div className="card flex justify-content-center ">
         <Sidebar
@@ -63,7 +63,7 @@ const Navbar = () => {
           onHide={() => setVisible(false)}
         >
           {/* 
-              Mobile sidebar menu items 
+              Mobile Sidebar Menu Items 
           */}
           <div className="list-none text-[#1D1D1D] font-Roboto flex items-center flex-col">
             <li className="pt-2 text-[22px] hover:text-[#717578]">Home</li>

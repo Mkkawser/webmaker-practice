@@ -10,4 +10,15 @@
 @font-face {
   font-family: Poppins;
   src: url("/font/Poppins.ttf");
-} 
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/font/Ubuntu.ttf");
+}
+
+/* 
+  Mobile Slide Width 
+*/
+.customWidth {
+  width: 75% !important;
+}

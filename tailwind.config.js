@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
+        Ubuntu: ["Ubuntu", "sans-serif"],
       },
     },
   },
