@@ -1,143 +1,77 @@
 import Image from "next/image";
+import HeroPicture from "./heroPic";
 
 const Hero = () => {
   return (
     <>
-      <div className="pt-2 p-5 sm:p-10 sm:mt-[50px] md:px-[80px]">
-        <div className="flex flex-col gap-[100px] sm:grid sm:grid-cols-2 sm:gap-10">
+      <div className="grid sm:grid-cols-[60%_40%] sm:pt-[10vw]">
+        <div className="sm:order-1">
           {/* 
              Hero Title Section
            */}
-          <div className="sm:order-2">
-            <p className="font-Roboto text-[#FF4F6E] text-[24px]">
+          <div className="pb-8 pt-2">
+            <p className="font-Roboto text-[#FF4F6E] text-[5vw] sm:text-[4.5vw]">
               {`Hello, I'm Nancy`}
             </p>
-            <p className="font-Ubuntu text-[#031E1D] text-[36px] font-bold tracking-[-0.03em] leading-[45px] w-[300px] sm:w-[300px] sm:h-[180px] sm:text-[40px]">
+            <p className="font-Ubuntu text-[#031E1D] font-bold tracking-[-0.03em] leading-[6vw] text-[6vw] max-[600px]:pb-4">
               Professional UI/UX Designer & Web Developer
             </p>
+          </div>
 
-            <div className="relative">
-              {/*
-               Hire Button 
-              */}
-              <div className="hidden sm:flex max-w-[150px] border-b-[3px]    pb-3 pt-6 drop-shadow-sm items-center gap-4">
-                <Image
-                  className="w-[36px]"
-                  height={100}
-                  width={100}
-                  src={`/img/hero-hire-arrow.png`}
-                  alt="img/hero-hire-arrow"
-                />
-                <p className="text-[#343E42] font-Poppins font-bold text-[12px]">
-                  Hire Me Now
-                </p>
-                {/* arrow Yellow */}
-                <div className="absolute top-[-60px] right-[-158px] rotate-[-20deg] hidden min-[730px]:flex">
-                  <Image
-                    height={100}
-                    width={100}
-                    className="max-w-[160px]"
-                    src="/img/hero-hire-arrow-yellow.png"
-                    alt="img/hero-hire-arrow-yellow"
-                  />
-                </div>
-              </div>
-            </div>
+          {/*
+            Hire Button 
+          */}
+          <div className="hidden sm:flex max-w-[25vw] border-b-[3px] pb-3 pt-6 drop-shadow-sm items-center gap-4">
+            <Image
+              className="w-[5vw]"
+              height={100}
+              width={100}
+              src={`/img/hero-hire-arrow.png`}
+              alt="img/hero-hire-arrow"
+            />
+            <p className="text-[#343E42] font-Poppins font-bold text-[2.5vw]">
+              Hire Me Now
+            </p>
 
-            {/* Social Icon */}
-            <div className="pt-4 hidden sm:flex">
+            {/* arrow Yellow */}
+            <div className="absolute top-[-20px] right-[-100px] rotate-[-20deg] hidden sm:flex">
               <Image
-                height={100}
-                width={100}
-                className="w-[25px]"
-                src="/img/hero-social-fb.png"
-                alt="hero-social-fb"
-              />
-              <Image
-                height={100}
-                width={100}
-                className="w-[25px]"
-                src="/img/hero-social-basket.png"
-                alt="hero-social-basket"
-              />
-              <Image
-                height={1000}
-                width={1000}
-                className="w-[25px]"
-                src="/img/hero-social-twitter.png"
-                alt="hero-social-twitter"
+                height={200}
+                width={200}
+                className="max-w-[15vw]"
+                src="/img/hero-hire-arrow-yellow.png"
+                alt="img/hero-hire-arrow-yellow"
               />
             </div>
           </div>
 
-          {/* 
-             Hero Image Section
-           */}
-          <div className="relative pt-50 sm:inline-flex sm:items-end">
-            {/* 
-              Background Image Reative
-           */}
+          {/* Social Icon */}
+          <div className="pt-4 hidden sm:flex gap-2">
+            <Image
+              height={200}
+              width={200}
+              className="w-[4.5vw]"
+              src="/img/hero-social-fb.png"
+              alt="hero-social-fb"
+            />
+            <Image
+              height={200}
+              width={200}
+              className="w-[4.5vw]"
+              src="/img/hero-social-basket.png"
+              alt="hero-social-basket"
+            />
             <Image
               height={1000}
               width={1000}
-              className="w-[290px] sm:max-w-[600px] md:w-800px"
-              src="/img/hero-girl-smile-img-bg.png"
-              alt="hero-girl-smile-img-bg"
+              className="w-[4.5vw]"
+              src="/img/hero-social-twitter.png"
+              alt="hero-social-twitter"
             />
-
-            <div className="absolute bottom-0">
-              <Image
-                height="1000"
-                width="1000"
-                className="w-[250px] sm:max-w-[600px] md:w-800px"
-                src={`/img/hero-girl-smile-img.png`}
-                alt="hero-girl-smile-img"
-              />
-
-              {/* Image Dot Dot */}
-              <div className="absolute max-w-[55px] bottom-0 opacity-60">
-                <Image
-                  height="1000"
-                  width="1000"
-                  src="/img/hero-girl-smile-dot.png"
-                  alt="hero-girl-smile-dot"
-                />
-              </div>
-            </div>
           </div>
         </div>
 
-        {/*
-           Hire Button 
-          */}
-        <div className="max-w-[280px] border-b-[3px] pb-3 pt-4 drop-shadow-sm flex items-center gap-7 sm:hidden">
-          <Image
-            height={1000}
-            width={1000}
-            src="/img/hero-hire-arrow.png"
-            alt="hero-hire-arrow"
-          />
-          <p className="text-[#343E42] font-Poppins font-bold text-[18px]">
-            Hire Me Now
-          </p>
-        </div>
-
-        <div className="absolute bottom-0 left-0 hidden sm:flex">
-          <Image
-            height={1000}
-            width={1000}
-            src="/img/hero-bottom-red.png"
-            alt="hero-bottom-red"
-          />
-        </div>
-        <div className="absolute bottom-0 right-0 hidden sm:flex">
-          <Image
-            height={1000}
-            width={1000}
-            src="/img/hero-right-green.png"
-            alt="hero-right-green"
-          />
-        </div>
+        <HeroPicture />
       </div>
     </>
   );

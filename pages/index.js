@@ -5,8 +5,14 @@ export default function Home() {
   return (
     <>
       <title>Home | Personal Portfolio</title>
-      <Navbar />
-      <Hero />
+
+      {/*
+         Wrap
+     */}
+      <div className="p-[5vw]">
+        <Navbar />
+        <Hero />
+      </div>
     </>
   );
 }

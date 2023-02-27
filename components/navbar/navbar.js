@@ -9,20 +9,20 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="p-5 sm:p-10 flex justify-between items-center md:px-[80px]">
+      <div className="flex justify-between items-center">
         {/* Site Logo */}
-        <div className="flex items-center gap-[5px] w-[25px]">
+        <div className="flex items-center gap-[1vw] max-w-[7vw] sm:max-w-[4vw]">
           <Image
             src="/img/logo.png"
-            width={50}
-            height={50}
+            width={1000}
+            height={1000}
             alt="Logo-of-this-site"
           />
 
           {/* 
              Logo Text Not For Mobile
            */}
-          <p className="hidden sm:block font-Roboto font-semibold text-[20px] text-[#031E1D]">
+          <p className="hidden sm:block font-Roboto font-semibold text-[2.5vw] text-[#031E1D]">
             Portfolio
           </p>
         </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
         {/*
          Navbar Menu items
          */}
-        <div className="hidden sm:flex gap-4 font-Roboto ml-4">
+        <div className="hidden sm:flex gap-[1.2vw] font-Roboto ml-4 text-[2vw]">
           <Link href={"/"}>Home</Link>
           <Link href={"/about"}>About us</Link>
           <Link href={"/service"}>Services</Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
 
         {/* Mobile Menu btn */}
         <div className="sm:hidden">
-          <button className="text-[28px]" onClick={() => setVisible(true)}>
+          <button className="text-[7vw]" onClick={() => setVisible(true)}>
             <FiMenu />
           </button>
         </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
              Navbar Lets talk Button
          */}
         <div className="hidden sm:block bg-[#009DAE] p-1 rounded-lg px-2 shadow-[7px_7px_30px_rgba(13,53,54,0.1)]">
-          <p className="font-Roboto text-white text-[13px]">Let’s talk</p>
+          <p className="font-Roboto text-white text-[2vw]">Let’s talk</p>
         </div>
       </div>
 
