@@ -10,10 +10,10 @@ const Hero = () => {
              Hero Title Section
            */}
           <div className="pb-8 pt-2">
-            <p className="font-Roboto text-[#FF4F6E] text-[5vw] sm:text-[4.5vw]">
+            <p className="font-Roboto text-[5vw] text-[#FF4F6E] sm:text-[4.5vw]">
               {`Hello, I'm Nancy`}
             </p>
-            <p className="font-Ubuntu text-[#031E1D] font-bold tracking-[-0.03em] leading-[6vw] text-[6vw] max-[600px]:pb-4">
+            <p className="font-Ubuntu text-[6vw] font-bold leading-[6vw] tracking-[-0.03em] text-[#031E1D] max-[600px]:pb-4">
               Professional UI/UX Designer & Web Developer
             </p>
           </div>
@@ -21,7 +21,7 @@ const Hero = () => {
           {/*
             Hire Button 
           */}
-          <div className="hidden sm:flex max-w-[25vw] border-b-[3px] pb-3 pt-6 drop-shadow-sm items-center gap-4">
+          <div className="hidden max-w-[25vw] items-center gap-4 border-b-[3px] pb-3 pt-6 drop-shadow-sm sm:flex">
             <Image
               className="w-[5vw]"
               height={100}
@@ -29,12 +29,12 @@ const Hero = () => {
               src={`/img/hero-hire-arrow.png`}
               alt="img/hero-hire-arrow"
             />
-            <p className="text-[#343E42] font-Poppins font-bold text-[2.5vw]">
+            <p className="font-Poppins text-[2.5vw] font-bold text-[#343E42]">
               Hire Me Now
             </p>
 
             {/* arrow Yellow */}
-            <div className="absolute top-[-20px] right-[-100px] rotate-[-20deg] hidden sm:flex">
+            <div className="absolute top-[-20px] right-[-100px] hidden rotate-[-20deg] sm:flex">
               <Image
                 height={200}
                 width={200}
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
 
           {/* Social Icon */}
-          <div className="pt-4 hidden sm:flex gap-2">
+          <div className="hidden gap-2 pt-4 sm:flex">
             <Image
               height={200}
               width={200}
@@ -72,6 +72,24 @@ const Hero = () => {
         </div>
 
         <HeroPicture />
+
+        <div className="absolute bottom-0 left-0 hidden sm:flex">
+          <Image
+            height={800}
+            width={800}
+            src="/img/hero-bottom-red.png"
+            alt="hero-bottom-red"
+          />
+        </div>
+
+        <div className="absolute bottom-0 right-0 hidden sm:flex">
+          <Image
+            height={800}
+            width={800}
+            src="/img/hero-right-green.png"
+            alt="hero-right-green"
+          />
+        </div>
       </div>
     </>
   );

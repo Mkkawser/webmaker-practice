@@ -1,0 +1,19 @@
+{
+  "details": [
+    {
+      "name": "UI/UX Design",
+      "des": "From the initial design to the final development stage, your dedicated team of specialists.",
+      "img": "/img/service-ui-ux-vector.png"
+    },
+    {
+      "name": "Web Design",
+      "des": "From the initial design to the final development stage, your dedicated team of specialists.",
+      "img": "/img/service-web-design-vector.png"
+    },
+    {
+      "name": "Digital Marketing",
+      "des": "From the initial design to the final development stage, your dedicated team of specialists.",
+      "img": "/img/service-digital-marketing-vector.png"
+    }
+  ]
+}

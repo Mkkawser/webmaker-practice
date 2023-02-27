@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center">
+      <div className="flex items-center justify-between">
         {/* Site Logo */}
-        <div className="flex items-center gap-[1vw] max-w-[7vw] sm:max-w-[4vw]">
+        <div className="flex max-w-[7vw] items-center gap-[1vw] sm:max-w-[4vw]">
           <Image
             src="/img/logo.png"
             width={1000}
@@ -22,7 +22,7 @@ const Navbar = () => {
           {/* 
              Logo Text Not For Mobile
            */}
-          <p className="hidden sm:block font-Roboto font-semibold text-[2.5vw] text-[#031E1D]">
+          <p className="hidden font-Roboto text-[2.5vw] font-semibold text-[#031E1D] sm:block">
             Portfolio
           </p>
         </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
         {/*
          Navbar Menu items
          */}
-        <div className="hidden sm:flex gap-[1.2vw] font-Roboto ml-4 text-[2vw]">
+        <div className="ml-4 hidden gap-[1.2vw] font-Roboto text-[2vw] sm:flex">
           <Link href={"/"}>Home</Link>
           <Link href={"/about"}>About us</Link>
           <Link href={"/service"}>Services</Link>
@@ -48,15 +48,15 @@ const Navbar = () => {
         {/*
              Navbar Lets talk Button
          */}
-        <div className="hidden sm:block bg-[#009DAE] p-1 rounded-lg px-2 shadow-[7px_7px_30px_rgba(13,53,54,0.1)]">
-          <p className="font-Roboto text-white text-[2vw]">Let’s talk</p>
+        <div className="hidden rounded-lg bg-[#009DAE] p-1 px-2 shadow-[7px_7px_30px_rgba(13,53,54,0.1)] sm:block">
+          <p className="font-Roboto text-[2vw] text-white">Let’s talk</p>
         </div>
       </div>
 
       {/* 
           Sidebar Panel      
          */}
-      <div className="card flex justify-content-center ">
+      <div className="card justify-content-center flex ">
         <Sidebar
           className="customWidth"
           visible={visible}
@@ -65,7 +65,7 @@ const Navbar = () => {
           {/* 
               Mobile Sidebar Menu Items 
           */}
-          <div className="list-none text-[#1D1D1D] font-Roboto flex items-center flex-col">
+          <div className="flex list-none flex-col items-center font-Roboto text-[#1D1D1D]">
             <li className="pt-2 text-[22px] hover:text-[#717578]">Home</li>
 
             <li className="pt-2 text-[22px] hover:text-[#717578]">About Us</li>
