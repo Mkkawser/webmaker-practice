@@ -42,7 +42,7 @@ export const ServiceProvide = () => {
 
 // Card Template
 const CardTemplate = ({ name, des, img }) => {
-  console.log(name);
+  // console.log(name);
   return (
     <div className="shadow-md">
       <div className="flex flex-col items-center gap-6 p-8">
